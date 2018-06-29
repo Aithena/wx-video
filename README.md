@@ -1,16 +1,16 @@
 # 腾讯视频小程序播放插件
-## 只需要一个vid！！把视频上传到腾讯视频之后得到vid！！就可以在自己的小程序上播放视频了！！流畅到爆！！
+只需要一个vid！！把视频上传到腾讯视频之后得到vid！！就可以在自己的小程序上播放视频了！！流畅到爆！！
 
 
-## 接入方式
+### 接入方式
 + 插件appid: wxa75efa648b60994b
 + 技术文档： https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wxa75efa648b60994b&token=1290792907&lang=zh_CN
 + 审核时间： 申请审核周期较长，本次申请经过了6天
 
 
-## 使用播放器组件
+### 使用播放器组件
 
-### /app.json 配置插件信息
+#### /app.json 配置插件信息
 <pre>
 "plugins": {
   "tencentvideo": {
@@ -25,14 +25,14 @@
 + provider： appid
 
 
-### /pages/dir/dir.json 使用插件
+#### /pages/dir/dir.json 使用插件
 <pre>
 "usingComponents": {
   "txv-video": "plugin://tencentvideo/video"
 }
 </pre>
 
-### /pages/dir/dir.wxml 插入视频控件
+#### /pages/dir/dir.wxml 插入视频控件
 <pre>
 <txv-video vid="t0704rp2e2k" playerid="txv1" autoplay="{{true}}" ></txv-video>
 </pre>
@@ -41,7 +41,7 @@
 + playerid: 视频控件ID
 + autoplay: 是否自动播放
 
-### /pages/dir/dir.js 调用插件及使用
+#### /pages/dir/dir.js 调用插件及使用
 <pre>
 //获取应用实例
 const TxvContext = requirePlugin('tencentvideo');
