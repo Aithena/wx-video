@@ -1,0 +1,13 @@
+{
+  "pages": [
+    
+    "pages/index/index"
+
+  ],
+  "plugins": {
+    "tencentvideo": {
+      "version": "1.1.1",
+      "provider": "wxa75efa648b60994b"
+    }
+  }
+}
